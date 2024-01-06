@@ -70,11 +70,7 @@
       "outputs": ["{options.outputFile}"]
     },
     "test": {
-      "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
-      "options": {
-        "jestConfig": "apps/analog-nx/jest.config.ts"
-      }
+      "executor": "@analogjs/platform:vitest"
     }
   }
 }

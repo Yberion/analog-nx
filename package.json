@@ -21,6 +21,8 @@
     "zone.js": "0.14.4"
   },
   "devDependencies": {
+    "@analogjs/platform": "1.1.2",
+    "@analogjs/vite-plugin-angular": "1.1.2",
     "@angular-devkit/build-angular": "17.3.3",
     "@angular-devkit/core": "17.3.3",
     "@angular-devkit/schematics": "17.3.3",
@@ -52,6 +54,9 @@
     "prettier": "3.2.5",
     "ts-jest": "29.1.2",
     "ts-node": "10.9.2",
-    "typescript": "5.4.4"
+    "typescript": "5.4.4",
+    "vite": "5.2.8",
+    "vite-tsconfig-paths": "4.3.2",
+    "vitest": "1.4.0"
   }
 }
