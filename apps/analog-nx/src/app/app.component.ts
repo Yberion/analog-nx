@@ -1,10 +1,11 @@
+import { TestaComponent } from '@analog-nx/testa';
+import { TestbComponent } from '@analog-nx/testb';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule, TestaComponent, TestbComponent],
   selector: 'analog-nx-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
