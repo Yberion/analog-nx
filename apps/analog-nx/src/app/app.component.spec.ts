@@ -15,7 +15,12 @@ describe('AppComponent', () => {
     component = fixture.componentInstance;
   });
 
-  it('should create', () => {
+  it('should create 1', () => {
+    fixture.detectChanges();
+    expect(component).toBeTruthy();
+  });
+
+  it.skip('should create 2', () => {
     fixture.detectChanges();
     expect(component).toBeTruthy();
   });
