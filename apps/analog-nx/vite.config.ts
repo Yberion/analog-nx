@@ -11,9 +11,7 @@ export default defineConfig(({ mode }) => {
       angular({
         tsconfig: 'apps/analog-nx/tsconfig.spec.json',
       }),
-      viteTsConfigPaths({
-        root: './',
-      })
+      viteTsConfigPaths()
     ],
     test: {
       globals: true,
