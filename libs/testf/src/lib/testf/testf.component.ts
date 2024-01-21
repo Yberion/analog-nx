@@ -1,14 +1,15 @@
+import { TestcComponent } from '@analog-nx/testc';
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Component({
-  selector: 'analog-nx-testc',
+  selector: 'analog-nx-testf',
   standalone: true,
-  imports: [],
-  templateUrl: './testc.component.html',
-  styleUrl: './testc.component.scss',
+  imports: [TestcComponent],
+  templateUrl: './testf.component.html',
+  styleUrl: './testf.component.scss',
 })
-export class TestcComponent implements OnInit {
+export class TestfComponent implements OnInit {
   public testBS = new BehaviorSubject<boolean>(false);
 
   ngOnInit(): void {

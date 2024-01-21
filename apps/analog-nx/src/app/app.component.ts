@@ -1,7 +1,8 @@
 import { TestaComponent } from '@analog-nx/testa';
 import { TestbComponent } from '@analog-nx/testb';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   standalone: true,
@@ -10,6 +11,12 @@ import { RouterModule } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'analog-nx';
+
+  public testBS = new BehaviorSubject<boolean>(false);
+
+  ngOnInit(): void {
+    this.testBS.next(true);
+  }
 }

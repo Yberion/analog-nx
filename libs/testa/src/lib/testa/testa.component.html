@@ -1,1 +1,21 @@
-<p>testa works!</p>
+<mat-sidenav-container>
+  <mat-sidenav
+    #sidenav
+    position="end"
+    fixedInViewport="true"
+    (keydown.escape)="sidenav.close()"
+  >
+  <p>bloblo</p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <main>
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+
+    <p>blabla</p>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

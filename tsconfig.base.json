@@ -17,7 +17,8 @@
     "paths": {
       "@analog-nx/testa": ["libs/testa/src/index.ts"],
       "@analog-nx/testb": ["libs/testb/src/index.ts"],
-      "@analog-nx/testc": ["libs/testc/src/index.ts"]
+      "@analog-nx/testc": ["libs/testc/src/index.ts"],
+      "@analog-nx/testd": ["libs/testd/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
