@@ -6,6 +6,9 @@
   "tags": [],
   "projectType": "library",
   "targets": {
+    "test": {
+      "executor": "@analogjs/platform:vitest"
+    },
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
