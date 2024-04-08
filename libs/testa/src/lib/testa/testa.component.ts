@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { TestAService } from './services/testa.service';
 
 @Component({
   selector: 'analog-nx-testa',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
   templateUrl: './testa.component.html',
   styleUrl: './testa.component.scss',
 })
-export class TestaComponent {}
+export class TestaComponent {
+  public readonly testAService: TestAService = inject(TestAService);
+
+  constructor() {
+    this.testAService.test$.pipe(takeUntilDestroyed()).subscribe((val) => console.log('VALLLLLLLLLLLLLLLLLLL', val));
+  }
+}

@@ -1,1 +1,9 @@
 <p>testa works!</p>
+
+@if (this.testAService.testSignal()) {
+  <h1 data-testid="testTitle">Test title</h1>
+}
+
+@if (this.testAService.getter1) {
+  <p data-testid="testParagraph">Test paragraph</p>
+}
