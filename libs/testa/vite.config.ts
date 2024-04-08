@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       angular({
-        tsconfig: 'apps/analog-nx/tsconfig.spec.json',
+        tsconfig: 'libs/testa/tsconfig.spec.json',
       }),
       viteTsConfigPaths(),
     ],
